@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集</title>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5; /* 背景色 */
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif; /* 字體 */
+            text-align: center; /* 整個頁面內容居中對齊 */
+        }
+
+        .navbar {
+            background-color: #007bff; /* 導航欄顏色 */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white; /* 導航文字顏色 */
+        }
+
+        #home h2,
+        #about h2 {
+            font-size: 2rem;
+            margin-top: 30px;
+            color: #343a40; /* 標題顏色 */
+        }
+
+        .carousel-caption h5 {
+            font-size: 1.8rem;
+            color: #fff; /* 輪播標題顏色 */
+        }
+
+        .carousel-caption p {
+            font-size: 1.2rem;
+        }
+
+        .fixed-bottom {
+            background-color: #007bff; /* 頁尾顏色 */
+            color: white; /* 頁尾文字顏色 */
+        }
+
+        .video-container {
+            margin: 30px 0; /* 調整影片區域的上下邊距 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">我的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container text-center mt-5">
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/1.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="第一張圖片">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>第一張圖片標題</h5>
+                        <p>第一張圖片的描述文字。</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/2.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="第二張圖片">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>第二張圖片標題</h5>
+                        <p>第二張圖片的描述文字。</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/4.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="第三張圖片">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>第三張圖片標題</h5>
+                        <p>第三張圖片的描述文字。</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+<!-- Projects Cards -->
+<div class="container mt-5">
+    <h2>作品集</h2>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card">
+                <img src="image/6.jpg" class="card-img-top" style="height: 300px; object-fit: cover;" alt="剪刀石頭布">
+                <div class="card-body">
+                    <h5 class="card-title">剪刀石頭布</h5>
+                    <a href="https://as87081200.github.io/0918-41241219/12" target="_blank" class="btn btn-primary">查看作品</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card">
+                <img src="image/5.jpg" class="card-img-top" style="height: 300px; object-fit: cover;" alt="翻卡牌遊戲">
+                <div class="card-body">
+                    <h5 class="card-title">翻卡牌遊戲</h5>
+                    <a href="https://as87081200.github.io/123/" target="_blank" class="btn btn-primary">查看作品</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Video Section -->
+    <div class="video-container container">
+        <h2>影片展示</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1hVW0SQuFTA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2YufNrnexlo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lacgPbJQDGk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container text-center my-5">
+        <h2>關於我</h2>
+        <p>這裡是關於我頁面的內容，介紹你的背景、技能和經驗。</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 fixed-bottom">
+        <div class="container">
+            <span class="text-muted">© 2024 我的作品集. 保留所有權利.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS and dependencies -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
